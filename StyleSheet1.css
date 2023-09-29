@@ -1,21 +1,26 @@
 body {
     background-color: rgb(255, 235, 205);
 }
+
 h1 {
     text-align: center;
 }
+
 h1, h2 {
     color: rgb(0, 0, 139);
     font-family: Algerian;
 }
+
 pre {
+    border:double;
     background-color: black;
     color: white;
 }
+
 ul {
     list-style-type: square;
 }
 
-p.dis{
-    color:red;
+p.dis {
+    color: red;
 }
