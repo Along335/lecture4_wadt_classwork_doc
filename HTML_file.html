@@ -22,6 +22,22 @@
 
     <link rel="stylesheet" href="StyleSheet1.css">
 
+    <script type="text/javascript">
+        var imgObj = null;
+
+        function init() {
+            imgObj = document.getElementById('myImage');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+        }
+
+        window.onload = init;
+
+    </script>
+
 </head>
 
 <body>
@@ -262,7 +278,11 @@
             Tammy is an independent creative professional and the host of Roundabout: Creative Chaos. She’s also the owner of Just Write Code, an independent production company located in West Tennessee. For more information about Tammy, visit her website by clicking the icons above.
         </b>
     </p>
-
+    <form>
+        <img id="myImage" src="arrow.jpeg" style="width:150px;height:110px"/>
+        <p>Click button below to move the image to right</p>
+        <input type="button" value="Click Me" onclick="moveRight();" />
+    </form>
     <script src="js/scripts.js"></script>
 </body>
 </html>
